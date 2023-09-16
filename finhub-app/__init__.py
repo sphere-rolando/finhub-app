@@ -62,6 +62,8 @@ def create_app(test_config=None):
             cd_performance = compound(init_amt=init_amt, monthly_amt=monthly_amt,
                                       init_array=init_array, compounding_perct=1.001667)
             
+            #add different etfs?
+            
 
             
 
