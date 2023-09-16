@@ -1,5 +1,6 @@
 import os
 from flask import Flask
+from .models.gpt import ask_gpt
 
 def create_app(test_config=None):
     app = Flask(__name__, instance_relative_config=True)
@@ -8,9 +9,13 @@ def create_app(test_config=None):
     except OSError:
         pass
 
-    # a simple page that says hello
     @app.route('/')
     def index():
         return 'Hello, World!'
+    
+    @app.route("/api/tips/<subject>")
+    def generate_tips(subject):
+        gpt_answer = ask_gpt(f"Act as if you were an advisor, give me a tip in regard to {subject}")
+        return gpt_answer
 
     return app
