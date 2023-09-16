@@ -15,7 +15,7 @@ def create_app(test_config=None):
     
     @app.route("/api/tips/<subject>")
     def generate_tips(subject):
-        gpt_answer = ask_gpt(f"Act as if you were an advisor, give me a tip in regard to {subject}")
+        gpt_answer = ask_gpt(f"Act as if you were an advisor. In just one or two sentences, give me a tip in regard to {subject}")
         return gpt_answer
 
     return app
