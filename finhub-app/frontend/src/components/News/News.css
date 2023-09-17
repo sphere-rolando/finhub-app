@@ -37,7 +37,7 @@
   font-weight: 400;
   padding-bottom: 10px;
   border-bottom: 1px solid white;
-  color: #d5f8d1;
+  color: #ffffff;
 }
 
 .head__text {
@@ -49,7 +49,7 @@
   line-height: 25px;
   font-size: 14px;
   padding-bottom: 10px;
-  color: white;
+  color: rgb(194, 207, 199);
 }
 
 .newsSummary {

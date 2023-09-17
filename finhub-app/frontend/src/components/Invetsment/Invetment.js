@@ -5,6 +5,12 @@ const Invetment = () => {
   const [investment, setInvestment] = useState();
   const [monthlyInvestment, setmonthlyInvestment] = useState();
   const [year, seYear] = useState();
+  const [graphData, setGraphData] = useState([
+    {
+      SnP_perf: '',
+      cd_perf: '',
+    },
+  ]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -20,6 +26,16 @@ const Invetment = () => {
     }).then(() => {
       console.log('okkkk');
     });
+  };
+  const handleClick = async () => {
+    fetch('/api/graph/')
+      .then((res) => res.json())
+      .then((data) => {
+        setGraphData({
+          graphData: data,
+        });
+        console.log(graphData);
+      });
   };
 
   return (
@@ -56,7 +72,11 @@ const Invetment = () => {
             onChange={(e) => seYear(e.target.value)}
           />
           <div style={{ alignItems: 'center' }}>
-            <button className="invetmentButton" type="submit">
+            <button
+              className="invetmentButton"
+              type="submit"
+              onClick={handleClick}
+            >
               Check
             </button>
           </div>
