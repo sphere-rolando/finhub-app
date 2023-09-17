@@ -38,7 +38,7 @@ const Navbar = () => {
           to="invetmentPage"
           spy={true}
           smooth={true}
-          offset={-100}
+          offset={-60}
           duration={500}
         >
           Investment Simulation
@@ -49,7 +49,7 @@ const Navbar = () => {
           to="tipsPage"
           spy={true}
           smooth={true}
-          offset={-100}
+          offset={-60}
           duration={500}
         >
           Tips
