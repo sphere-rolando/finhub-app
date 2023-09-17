@@ -15,7 +15,8 @@ model = AutoModelForSequenceClassification.from_pretrained(model_id)
 def get_news(limit: int = 10):
     news =  finnhub_client.general_news('general')[:limit]
     for article in news:
-        article["sentiment"] = bert_sentiment(article["headline"])
+        sentiment = bert_sentiment(article["headline"])
+        article["sentiment"] = "positive" if sentiment == 1 else "negative" if sentiment == -1 else "neutral"
     return news
 
 def bert_sentiment(headline):

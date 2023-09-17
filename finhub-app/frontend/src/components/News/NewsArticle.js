@@ -12,6 +12,7 @@ function NewsArticle() {
       sentiment: '',
     },
   ]);
+  const sentiment = ["Negative", "Neutral", "Positive"]
 
   useEffect(() => {
     fetch('api/news/6')
@@ -31,7 +32,7 @@ function NewsArticle() {
           <p className="newsSummary">{item.summary}</p>
           <a className="newsUrl" href={item.url}>
             {' '}
-            Read more {item.sentiment}{' '}
+            Read more ({item.sentiment}){' '}
           </a>
         </div>
       ))}

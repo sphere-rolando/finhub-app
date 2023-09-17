@@ -46,6 +46,28 @@ const Navbar = () => {
         <Link
           className="navLinkItem"
           activeClass="active"
+          to="videos"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
+        >
+          Videos
+        </Link>
+        <Link
+          className="navLinkItem"
+          activeClass="active"
+          to="books"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
+        >
+          Books
+        </Link>
+        <Link
+          className="navLinkItem"
+          activeClass="active"
           to="tipsPage"
           spy={true}
           smooth={true}
