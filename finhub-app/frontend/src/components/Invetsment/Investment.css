@@ -1,0 +1,79 @@
+.invetmentPage {
+  height: calc(100vh - 4rem);
+  width: 75vw;
+  max-width: 75rem;
+  overflow: hidden;
+  margin: 0 auto;
+  justify-items: center;
+}
+.contactUs {
+  justify-content: center;
+}
+
+.contactTitle_invetment {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #48a941;
+  font-weight: 300;
+  margin: 1rem;
+}
+
+.contactText_landing {
+  font-size: medium;
+  font-weight: 300;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.Initial_investment,
+.Monthly_saving,
+.time {
+  margin-bottom: 1rem;
+  font-size: medium;
+  width: 25%;
+  max-width: 40rem;
+  margin: 0.5rem;
+  padding: 1rem 1rem;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: rgb(59, 59, 59);
+  outline: none;
+}
+.Initial_investment:hover,
+.Monthly_saving:hover,
+.time:hover {
+  border: 0.5px solid #48a941;
+}
+
+.Initial_investment:focus,
+.Monthly_saving:focus,
+.time:focus {
+  outline: 0.5px solid #48a941;
+}
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.invetmentButton {
+  display: block;
+  background-color: #f8f8fe;
+  color: #17152b;
+  border: none;
+  justify-content: center;
+  border-radius: 4rem;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+.invetmentButton:hover {
+  background-color: #f5faf4;
+}
+
+.invetmentButton:active {
+  transform: scale(0.95);
+}

@@ -1,0 +1,75 @@
+.tipsPage {
+  height: calc(115vh - 4rem);
+  width: 75vw;
+  max-width: 75rem;
+  overflow: hidden;
+  margin: 0 auto;
+  justify-items: center;
+
+  position: relative;
+}
+
+.imageText {
+  font-weight: 300;
+  font-size: 3rem;
+  color: white;
+  margin: 1rem;
+}
+
+.tipImage {
+  width: 60%;
+  height: 50%;
+  margin: 0 10rem;
+  margin-bottom: 3rem;
+
+  margin-left: 20rem;
+}
+.chatGptText {
+  font-weight: 200;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: white;
+  margin: 1rem;
+}
+
+.chatGptcite {
+  font-weight: 200;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #91b18e;
+  margin: 1rem;
+  padding-left: 1rem;
+}
+
+.generateButton {
+  text-align: left;
+  position: relative;
+  display: block;
+  background-color: #f8f8fe;
+  color: #17152b;
+  border: none;
+  justify-content: center;
+  border-radius: 4rem;
+  padding: 1.2rem 3.3rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+.generateButton:hover {
+  background-color: #f5faf4;
+}
+
+.generateButton:active {
+  transform: scale(0.95);
+}
+
+.aiImg {
+  position: absolute;
+  object-fit: cover;
+  height: 2.2rem;
+  width: 2.2rem;
+  top: 17px;
+  right: 15px;
+}

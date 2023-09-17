@@ -4,7 +4,7 @@ from ..models.graph import compound
 
 graph_blueprint = Blueprint("graph", __name__)
 
-@graph_blueprint.route("/", methods=["GET"])
+@graph_blueprint.route("/", methods=["POST"])
 def get():
      # going to have to validate requests eventually
     '''
@@ -13,10 +13,10 @@ def get():
     # else:
     #     return "403 forbidden"
     '''
-
-    monthly_amt = request.args.get("monthly_amt") # this is monthly addition to savings
-    init_amt = request.args.get("init_amt") # this is initial savings
-    time_in_months = request.args.get("time_pd") #convert years to months
+    data = request.get_json()
+    monthly_amt = data["monthly_amt"] # this is monthly addition to savings
+    init_amt = data["init_amt"] # this is initial savings
+    time_in_months = data["time_pd"] #convert years to months
 
     time_in_months = int(time_in_months) * 12
     init_amt = int(init_amt)

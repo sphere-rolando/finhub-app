@@ -1,0 +1,131 @@
+.landingContainer {
+  align-items: center;
+  height: calc(100vh - 4rem);
+  width: 100vw;
+  max-width: 75rem;
+  overflow: hidden;
+
+  position: fixed;
+  margin: 0 8rem;
+}
+
+.logoLand {
+  margin-top: 1rem;
+  object-fit: fill;
+  max-height: 12rem;
+  width: 10rem;
+  position: relative;
+}
+
+.landingButton {
+  background-color: #48a941;
+
+  border: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4rem;
+  padding: 0.8rem 1.9rem;
+  display: flex;
+  font-size: 1.2rem;
+  color: black;
+  font-weight: 300;
+  margin-top: -4rem;
+}
+
+.landingButton:hover {
+  background-color: #7fce79;
+}
+
+.landingButton:active {
+  transform: scale(0.95);
+  transition: 10ms;
+}
+
+.landingTitle-brand {
+  display: inline-block;
+  margin-top: 3rem;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+  color: #48a941;
+  letter-spacing: 1px;
+}
+.landingTitle-title {
+  font-size: 2.5rem;
+  font-weight: 200;
+  margin-bottom: 0.3rem;
+}
+
+.textContainer {
+  margin-top: 4rem;
+  height: 60%;
+  width: 50%;
+}
+
+.desc {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #727272;
+  line-height: 2.3rem;
+  margin-top: -1.5rem;
+}
+
+.leftImage {
+  position: absolute;
+  z-index: -1;
+  top: 8rem;
+  right: -17rem;
+  object-fit: contain;
+  height: 80vh;
+  width: 85vw;
+}
+
+.leftImage2 {
+  transform: rotate(-50deg);
+  position: absolute;
+  z-index: -5;
+  top: 10rem;
+  right: -15rem;
+  object-fit: contain;
+  height: 80vh;
+  width: 85vw;
+}
+
+.leftImage3 {
+  transform: rotate(50deg);
+  position: absolute;
+  z-index: -10;
+  top: 9rem;
+  right: -19rem;
+  object-fit: contain;
+  height: 80vh;
+  width: 85vw;
+}
+
+.conatactUs {
+  position: absolute;
+  top: 3rem;
+  right: 9rem;
+  background-color: transparent;
+  color: white;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4rem;
+  padding: 0.8rem 1.3rem;
+  display: flex;
+  font-size: 1rem;
+  border: #48a941 solid 1px;
+
+  font-weight: 300;
+}
+
+.conatactUs:hover {
+  background-color: #48a941;
+  color: white;
+}
+.conatactUs:active {
+  transform: scale(0.95);
+  transition: 10ms;
+}

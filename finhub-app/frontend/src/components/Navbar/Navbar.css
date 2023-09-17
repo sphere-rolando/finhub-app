@@ -1,0 +1,66 @@
+.navbar {
+  height: 5rem;
+  width: 100vw;
+  max-width: 100rem;
+  padding: 1rem 1rem;
+  padding-left: 12.5rem;
+  padding-right: 12.5rem;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background-color: #292929;
+}
+
+.logo {
+  cursor: pointer;
+  object-fit: contain;
+  height: 6rem;
+  width: 8rem;
+}
+
+.navLinkItem {
+  margin: 1rem;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: 200;
+}
+
+.navLinkItem:hover {
+  color: #48a941;
+  padding-bottom: 0.5rem;
+}
+.navContactMeImg {
+  object-fit: cover;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 0.4rem;
+}
+
+.contactNavButton {
+  background-color: transparent;
+  color: white;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4rem;
+  padding: 0.8rem 1.3rem;
+  display: flex;
+  font-size: 1rem;
+  border: #48a941 solid 1px;
+
+  font-weight: 300;
+}
+
+.contactNavButton:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.contactNavButton:active {
+  transform: scale(0.95);
+  transition: 10ms;
+}
