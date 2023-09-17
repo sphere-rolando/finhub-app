@@ -9,9 +9,9 @@ const Invetment = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const data = {
-      investment: 'init_amt',
-      monthlyInvestment: 'monthly_amt',
-      year: 'time_pd',
+      init_amt: investment,
+      monthly_amt: monthlyInvestment,
+      time_pd: year,
     };
     fetch('/api/graph/', {
       method: 'POST',
