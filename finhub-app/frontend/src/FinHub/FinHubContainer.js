@@ -4,11 +4,13 @@ import ContatctUs from '../components/ContactUs/ContactUs.js';
 import Invetment from '../components/Invetsment/Invetment.js';
 import Tips from '../components/Tips/Tips.js';
 import News from '../components/News/News.js';
+import Home from '../components/Home/Home.js';
 
 const FinHubContainer = () => {
   return (
     <>
       <Navbar />
+      <Home />
       <News />
       <Invetment />
       <Tips />

@@ -1,5 +1,5 @@
 .invetmentPage {
-  height: calc(100vh - 4rem);
+  height: calc(115vh - 4rem);
   width: 75vw;
   max-width: 75rem;
   overflow: hidden;
@@ -16,6 +16,7 @@
   color: #48a941;
   font-weight: 300;
   margin: 1rem;
+  margin-bottom: 2rem;
 }
 
 .contactText_landing {
