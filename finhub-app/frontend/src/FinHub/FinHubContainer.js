@@ -15,9 +15,9 @@ const FinHubContainer = () => {
       <Home />
       <News />
       <Invetment />
-      <Tips />
       <Videos />
       <Books />
+      <Tips />
       <ContatctUs />
     </>
   );
