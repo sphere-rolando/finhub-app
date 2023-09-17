@@ -87,6 +87,7 @@ const Invetment = () => {
                 {
                   ticks: {
                     beginAtZero: true,
+                    stepSize: 10000
                   },
                 },
               ],

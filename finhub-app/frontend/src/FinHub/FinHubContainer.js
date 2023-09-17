@@ -6,6 +6,7 @@ import Tips from '../components/Tips/Tips.js';
 import News from '../components/News/News.js';
 import Home from '../components/Home/Home.js';
 import Videos from '../components/Videos/Videos.js';
+import Books from '../components/Books/Books.js';
 
 const FinHubContainer = () => {
   return (
@@ -16,6 +17,7 @@ const FinHubContainer = () => {
       <Invetment />
       <Tips />
       <Videos />
+      <Books />
       <ContatctUs />
     </>
   );
