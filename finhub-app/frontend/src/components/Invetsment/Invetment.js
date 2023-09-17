@@ -15,10 +15,10 @@ const Invetment = () => {
     },
   ]);
 
-  useEffect(() => {
-    console.log(graphData);
-    
-  });
+  // useEffect(() => {
+  //   console.log(graphData);
+
+  // });
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -51,10 +51,8 @@ const Invetment = () => {
         setGraphData(data);
       });
 
-      console.log(graphData)
+    console.log(graphData);
   };
-
-  
 
   return (
     <section className="invetmentPage">
@@ -62,35 +60,22 @@ const Invetment = () => {
       <div className="chart">
         <Line
           data={{
-            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'],
             datasets: [
               {
-                label: '# of votes',
-                data: [12, 19, 3, 5, 2, 3],
-                backgroundColor: [
-                  'rgba(255, 99, 132, 0.2)',
-                  'rgba(54, 162, 235, 0.2)',
-                  'rgba(255, 206, 86, 0.2)',
-                  'rgba(75, 192, 192, 0.2)',
-                  'rgba(153, 102, 255, 0.2)',
-                  'rgba(255, 159, 64, 0.2)',
-                ],
-                borderColor: [
-                  'rgba(255, 99, 132, 1)',
-                  'rgba(54, 162, 235, 1)',
-                  'rgba(255, 206, 86, 1)',
-                  'rgba(75, 192, 192, 1)',
-                  'rgba(153, 102, 255, 1)',
-                  'rgba(255, 159, 64, 1)',
-                ],
-                borderWidth: 1,
+                label: 'SnP_perf',
+                data: graphData.SnP_perf,
+
+                backgroundColor: ['rgba(72, 169, 65,1)', 'rgba(191, 52, 94,1)'],
+                borderColor: ['rgba(72, 169, 65,1)', 'rgba(191, 52, 94,1)'],
+                borderWidth: 2,
               },
-              // {
-              //   label: 'Quantity',
-              //   data: [47, 52, 67, 58, 9, 50],
-              //   backgroundColor: 'orange',
-              //   borderColor: 'red',
-              // },
+              {
+                label: 'cd_perf',
+                data: graphData.cd_perf,
+                backgroundColor: 'pink',
+                borderColor: 'pink',
+              },
             ],
           }}
           height={400}
