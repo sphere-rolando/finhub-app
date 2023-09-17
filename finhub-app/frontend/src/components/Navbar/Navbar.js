@@ -54,6 +54,17 @@ const Navbar = () => {
         >
           Tips
         </Link>
+        <Link
+          className="navLinkItem"
+          activeClass="active"
+          to="books"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
+        >
+          Resources
+        </Link>
       </div>
       <button
         className="contactNavButton"

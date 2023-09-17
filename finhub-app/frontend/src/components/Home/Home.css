@@ -9,10 +9,21 @@
   padding-left: 1rem;
 }
 .homeImage {
-  width: 80%;
-  height: 50%;
-  margin: 0 10rem;
-  margin-left: 20rem;
+  position: absolute;
+  z-index: -1;
+  top: 11rem;
+  right: -7rem;
+  object-fit: contain;
+  height: 40vh;
+  width: 45vw;
+}
 
-  margin-top: 10rem;
+.intro {
+  display: inline-block;
+  font-size: 1.7rem;
+  font-weight: 200;
+  line-height: 1.5;
+  margin-top: 18rem;
+
+  letter-spacing: 1px;
 }

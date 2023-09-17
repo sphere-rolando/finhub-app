@@ -5,9 +5,7 @@ import '../Videos/Videos.css';
 const Videos = () => {
   return (
     <section className="videos">
-      <h1 className="VideosSectionTitle">
-        Educational Videos 📹
-      </h1>
+      <h1 className="VideoSectionTitle">Educational Videos</h1>
       <Video />
     </section>
   );

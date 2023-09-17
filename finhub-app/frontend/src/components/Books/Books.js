@@ -1,13 +1,12 @@
 import React from 'react';
 import '../Books/Books.css';
 import Book from '../../components/Books/Book.js';
+import Videos from '../Videos/Videos';
 
 const Books = () => {
   return (
     <section className="books">
-      <h1 className="BooksSectionTitle">
-        Educational Books 📚
-      </h1>
+      <span className="BooksSectionTitle">Educational Books</span>
       <Book />
     </section>
   );

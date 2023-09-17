@@ -19,9 +19,15 @@
 
 .newContiner {
   max-width: 350px;
-
   padding: 30px;
   background-color: rgba(255, 255, 255, 0.234);
+  border-radius: 15px;
+}
+
+.newcontinersentiment {
+  max-width: 350px;
+  padding: 30px;
+  background-color: rgb(97, 226, 112);
   border-radius: 15px;
 }
 

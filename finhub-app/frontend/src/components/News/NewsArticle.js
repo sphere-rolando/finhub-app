@@ -9,6 +9,7 @@ function NewsArticle() {
       headline: '',
       summary: '',
       url: '',
+      sentiment: '',
     },
   ]);
 
@@ -30,7 +31,7 @@ function NewsArticle() {
           <p className="newsSummary">{item.summary}</p>
           <a className="newsUrl" href={item.url}>
             {' '}
-            Read more{' '}
+            Read more {item.sentiment}{' '}
           </a>
         </div>
       ))}
