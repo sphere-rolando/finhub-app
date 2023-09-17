@@ -10,10 +10,15 @@ const Invetment = () => {
   const [year, seYear] = useState();
   const [graphData, setGraphData] = useState([
     {
-      SnP_perf: '',
-      cd_perf: '',
+      SnP_perf: [],
+      cd_perf: [],
     },
   ]);
+
+  useEffect(() => {
+    console.log(graphData);
+    
+  });
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -27,19 +32,29 @@ const Invetment = () => {
       headers: { 'Content-type': 'application/json' },
       body: JSON.stringify(data),
     }).then(() => {
-      console.log('okkkk');
+      console.log('Success');
     });
   };
   const handleClick = async () => {
-    fetch('/api/graph/')
+    const data = {
+      init_amt: investment,
+      monthly_amt: monthlyInvestment,
+      time_pd: year,
+    };
+    fetch('/api/graph/', {
+      method: 'POST',
+      headers: { 'Content-type': 'application/json' },
+      body: JSON.stringify(data),
+    })
       .then((res) => res.json())
       .then((data) => {
-        setGraphData({
-          graphData: data,
-        });
-        console.log(graphData);
+        setGraphData(data);
       });
+
+      console.log(graphData)
   };
+
+  
 
   return (
     <section className="invetmentPage">

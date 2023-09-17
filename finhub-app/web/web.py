@@ -8,6 +8,7 @@ web_blueprint = Blueprint(
     template_folder="../frontend/public",
 )
 
+@web_blueprint.route("/Home")
 @web_blueprint.route("/")
 def home(path=None):
     "Renders the index html page"
