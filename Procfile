@@ -1,2 +1,2 @@
 web: python3 -m flask --app finhub-app run
-worker: npm install && npm start
+worker: cd finhub-app/frontend && npm install && npm start
